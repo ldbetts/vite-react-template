@@ -1,65 +1,49 @@
-// src/App.tsx
-
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import cloudflareLogo from "./assets/Cloudflare_Logo.svg";
-import honoLogo from "./assets/hono.svg";
 import "./App.css";
 
-function App() {
-	const [count, setCount] = useState(0);
-	const [name, setName] = useState("unknown");
+// Fill this in once your Signal group invite link is ready.
+const SIGNAL_URL = "";
+const FACEBOOK_URL = "https://www.facebook.com/groups/wanderut";
 
+function App() {
 	return (
-		<>
-			<div>
-				<a href="https://vite.dev" target="_blank">
-					<img src={viteLogo} className="logo" alt="Vite logo" />
-				</a>
-				<a href="https://react.dev" target="_blank">
-					<img src={reactLogo} className="logo react" alt="React logo" />
-				</a>
-				<a href="https://hono.dev/" target="_blank">
-					<img src={honoLogo} className="logo cloudflare" alt="Hono logo" />
-				</a>
-				<a href="https://workers.cloudflare.com/" target="_blank">
-					<img
-						src={cloudflareLogo}
-						className="logo cloudflare"
-						alt="Cloudflare logo"
-					/>
-				</a>
-			</div>
-			<h1>Vite + React + Hono + Cloudflare</h1>
-			<div className="card">
-				<button
-					onClick={() => setCount((count) => count + 1)}
-					aria-label="increment"
+		<main className="wander">
+			<h1 className="wander__title">Wander.</h1>
+			<p className="wander__tagline">
+				nature - new experiences - odd company
+			</p>
+
+			<div className="wander__photo" aria-hidden="true" />
+
+			<nav className="wander__links">
+				
+					className="wander__link"
+					href={FACEBOOK_URL}
+					target="_blank"
+					rel="noreferrer"
 				>
-					count is {count}
-				</button>
-				<p>
-					Edit <code>src/App.tsx</code> and save to test HMR
-				</p>
-			</div>
-			<div className="card">
-				<button
-					onClick={() => {
-						fetch("/api/")
-							.then((res) => res.json() as Promise<{ name: string }>)
-							.then((data) => setName(data.name));
-					}}
-					aria-label="get name"
-				>
-					Name from API is: {name}
-				</button>
-				<p>
-					Edit <code>worker/index.ts</code> to change the name
-				</p>
-			</div>
-			<p className="read-the-docs">Click on the logos to learn more</p>
-		</>
+					Facebook group
+				</a>
+				{SIGNAL_URL ? (
+					
+						className="wander__link"
+						href={SIGNAL_URL}
+						target="_blank"
+						rel="noreferrer"
+					>
+						Signal group
+					</a>
+				) : (
+					<span className="wander__link wander__link--pending">
+						Signal group (coming soon)
+					</span>
+				)}
+			</nav>
+
+			<footer className="wander__footer">
+				<p>no commitment - no agendas - no cliques</p>
+				<p>activities every other saturday (age 18-28)</p>
+			</footer>
+		</main>
 	);
 }
 
