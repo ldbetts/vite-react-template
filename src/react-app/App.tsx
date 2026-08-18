@@ -2,7 +2,7 @@ import "./App.css";
 
 // Fill this in once your Signal group invite link is ready.
 const SIGNAL_URL = "";
-const FACEBOOK_URL = "https://www.facebook.com/groups/wanderutah";
+const FACEBOOK_URL = "https://www.facebook.com/groups/wanderutah"; // double-check this against wanderutah
 
 function App() {
 	return (
@@ -15,21 +15,11 @@ function App() {
 			<div className="wander__photo" aria-hidden="true" />
 
 			<nav className="wander__links">
-				
-					className="wander__link"
-					href={FACEBOOK_URL}
-					target="_blank"
-					rel="noreferrer"
-				>
+				<a className="wander__link" href={FACEBOOK_URL} target="_blank" rel="noreferrer">
 					Facebook group
 				</a>
 				{SIGNAL_URL ? (
-					
-						className="wander__link"
-						href={SIGNAL_URL}
-						target="_blank"
-						rel="noreferrer"
-					>
+					<a className="wander__link" href={SIGNAL_URL} target="_blank" rel="noreferrer">
 						Signal group
 					</a>
 				) : (

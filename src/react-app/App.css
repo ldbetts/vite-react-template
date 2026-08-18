@@ -10,7 +10,7 @@
 }
 
 .wander__title {
-	font-family: "Futura", "Futura PT", "Century Gothic", sans-serif;
+	font-family: "Jost", "Century Gothic", sans-serif;
 	font-weight: 700;
 	font-size: clamp(3rem, 11vw, 6.5rem);
 	line-height: 1;
@@ -19,7 +19,7 @@
 }
 
 .wander__tagline {
-	font-family: "Futura", "Futura PT", "Century Gothic", sans-serif;
+	font-family: "Jost", "Century Gothic", sans-serif;
 	font-style: italic;
 	font-weight: 400;
 	font-size: clamp(1rem, 2.5vw, 1.35rem);
@@ -45,7 +45,7 @@
 }
 
 .wander__link {
-	font-family: "Futura", "Futura PT", "Century Gothic", sans-serif;
+	font-family: "Jost", "Century Gothic", sans-serif;
 	font-style: italic;
 	font-size: 1.05rem;
 	color: #201f1f;
@@ -60,7 +60,7 @@
 }
 
 .wander__footer p {
-	font-family: "Futura", "Futura PT", "Century Gothic", sans-serif;
+	font-family: "Jost", "Century Gothic", sans-serif;
 	font-style: italic;
 	font-size: clamp(0.9rem, 2vw, 1.05rem);
 	margin: 0.2rem 0;
