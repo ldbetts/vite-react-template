@@ -2,7 +2,7 @@ import "./App.css";
 
 // Fill this in once your Signal group invite link is ready.
 const SIGNAL_URL = "";
-const FACEBOOK_URL = "https://www.facebook.com/groups/wanderut";
+const FACEBOOK_URL = "https://www.facebook.com/groups/wanderutah";
 
 function App() {
 	return (
