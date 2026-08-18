@@ -9,13 +9,9 @@
 	text-align: center;
 }
 
-.wander__title {
-	font-family: "Jost", "Century Gothic", sans-serif;
-	font-weight: 700;
-	font-size: clamp(3rem, 11vw, 6.5rem);
-	line-height: 1;
-	margin: 0;
-	letter-spacing: -0.01em;
+.wander__logo {
+	width: min(75vw, 420px);
+	height: auto;
 }
 
 .wander__tagline {
@@ -29,12 +25,8 @@
 .wander__photo {
 	width: min(85vw, 480px);
 	aspect-ratio: 4 / 5;
-	/* Swap this block out for your own photo:
-	   background-image: url("./assets/hero.jpg");
-	   background-size: cover;
-	   background-position: center;
-	*/
-	background: linear-gradient(180deg, #bcd4dd 0%, #e7ceb5 100%);
+	object-fit: cover;
+	display: block;
 }
 
 .wander__links {
