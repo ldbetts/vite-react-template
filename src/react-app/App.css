@@ -45,7 +45,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 0.85rem;
+	gap: 0.5rem;
 	padding-top: 1rem;
 }
 
@@ -59,7 +59,7 @@
 	font-family: "Jost", "Century Gothic", sans-serif;
 	font-style: italic;
 	font-weight: 400;
-	font-size: clamp(1rem, 2.5vw, 1.35rem);
+	font-size: clamp(0.8rem, 4vw, 1.35rem);
 	margin: 0;
 	text-shadow: 0 1px 6px rgba(255, 255, 255, 0.5);
 }
@@ -81,7 +81,7 @@
 .wander__link {
 	font-family: "Jost", "Century Gothic", sans-serif;
 	font-style: italic;
-	font-size: 1.05rem;
+	font-size: clamp(0.8rem, 3.2vw, 1.05rem);
 	color: #201f1f;
 	text-decoration: none;
 	padding: 0.7rem 1.75rem;
@@ -113,7 +113,7 @@
 .wander__footer p {
 	font-family: "Jost", "Century Gothic", sans-serif;
 	font-style: italic;
-	font-size: clamp(0.85rem, 2vw, 1rem);
+	font-size: clamp(0.7rem, 3vw, 1rem);
 	margin: 0.2rem 0;
 	text-shadow: 0 1px 6px rgba(255, 255, 255, 0.5);
 }
