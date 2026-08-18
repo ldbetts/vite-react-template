@@ -27,10 +27,10 @@ function App() {
 
 				<div className="wander__bottom">
 					<nav className="wander__links">
-						<a className="wander__link" href={FACEBOOK_URL} target="_blank" rel="noreferrer">
+						<a className="wander__link" href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer">
 							Facebook group
 						</a>
-						<a className="wander__link" href={SIGNAL_URL} target="_blank" rel="noreferrer">
+						<a className="wander__link" href={SIGNAL_URL} target="_blank" rel="noopener noreferrer">
 							Signal group
 						</a>
 					</nav>
